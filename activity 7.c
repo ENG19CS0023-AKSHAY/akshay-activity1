@@ -1,6 +1,8 @@
 //WAP to find the distance between two points using structures and 4 functions.
 #include <stdio.h>
 
+#include <stdio.h>
+
 #include <math.h>
 
 struct point
@@ -23,11 +25,11 @@ Point1 input()
 
     printf("Enter abcissa ");
 
-    scanf("%f",&p.x);
+    scanf("%f",&(p.x));
 
     printf("Enter ordinate ");
 
-    scanf("%f",&p.y);
+    scanf("%f",&(p.y));
 
     return p;
 
@@ -39,18 +41,15 @@ float compute(Point1 p1,Point1 p2)
 
     float distance;
 
-    distance=sqrt(pow((p1.x-p2.x),2)+pow((p1.y-p2.y),2));
-
+    distance=sqrt(pow(((p1.x)-(p2.x)),2)+pow(((p1.y)-(p2.y)),2));
     return distance;
-
 }
 
 void output(Point1 p1, Point1 p2, float dist)
 
 {
 
-    printf("The distance between %f,%f and %f,%f is %f",p1.x,p1,y,p2.x,p2,y,dist);
-
+    printf("The distance between %f,%f and %f,%f is %f",(p1.x),(p1.y),(p2.x),(p2.y),dist);
 }
 
 int main(void)
@@ -67,7 +66,7 @@ int main(void)
 
     dist=compute(p1,p2);
 
-    output(dist);
+    output(p1,p2,dist);
 
     return 0;
 
