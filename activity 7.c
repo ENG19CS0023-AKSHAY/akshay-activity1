@@ -11,7 +11,9 @@ struct point
 
     float y;
 
-}Point1;
+};
+
+typedef struct point Point1;
 
 Point1 input()
 
