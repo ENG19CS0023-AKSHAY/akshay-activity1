@@ -37,7 +37,7 @@ void output(float a,float b,float c,float d,float e)
 }
 int main()
 {
-    float x,x1,y,y1;
+    float x,x1,y,y1,z;
     
     printf("Enter X coordinate\n");
     
